@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MeFace - 芯片级超表面3D人脸识别模组 | MetaOptix 墨璞光学">
+  <title>产品与技术 | MetaOptix 墨璞光学</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="bg-grid"></div>
+<div class="bg-orb bg-orb-1"></div>
+<div class="bg-orb bg-orb-2"></div>
+<div class="bg-orb bg-orb-3"></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">M</div>
+      <div>
+        <div>MetaOptix</div>
+        <div class="logo-sub">墨璞光学</div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="product.html" class="active">产品与技术</a>
+      <a href="about.html">关于我们</a>
+      <a href="contact.html">联系与合作</a>
+    </div>
+    <button class="nav-toggle" aria-label="菜单">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<main class="page-wrap">
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="section-label animate">Product & Technology</div>
+    <h1 class="section-title animate">MeFace 超表面 3D 人脸识别模组</h1>
+    <p class="section-desc animate">
+      基于亚波长超表面光场调控技术，以单片 Meta-DOE 芯片替代传统多层 DOE 光学堆栈
+    </p>
+  </section>
+
+  <!-- Product Overview -->
+  <section class="section" style="padding-top:0;">
+    <div class="section-inner">
+      <div class="grid-2 animate">
+        <div>
+          <h2 style="font-size:1.8rem;font-weight:700;margin-bottom:20px;color:#fff;">
+            一片芯片，替代整个光学堆栈
+          </h2>
+          <p style="color:var(--text-secondary);margin-bottom:16px;line-height:1.7;">
+            MeFace 的核心是 Meta-DOE 超表面光学芯片。通过亚波长纳米结构对近红外光场进行
+            相位、振幅和点阵分布的独立调控，将传统方案中准直镜、分束器、衍射光学元件（DOE）
+            等多层光学组件的功能集于一体。
+          </p>
+          <p style="color:var(--text-secondary);margin-bottom:16px;line-height:1.7;">
+            技术路线与 iPhone 17 所采用的超表面方案总体接近，在微型化程度与成本控制方面
+            具备较大优势，能更好服务于国产中高端手机及 IoT 设备市场。
+          </p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;">
+            <span class="tag tag-blue">超表面光学</span>
+            <span class="tag tag-purple">结构光编码</span>
+            <span class="tag tag-green">AI 三维重建</span>
+            <span class="tag tag-blue">硬件级防伪</span>
+            <span class="tag tag-purple">半导体 DUV 工艺</span>
+          </div>
+        </div>
+        <div class="img-card">
+          <img src="images/image19.png" alt="MeFace 工作原理" loading="lazy">
+          <div class="img-caption">图：MeFace 产品工作原理示意 — 超表面阵列 → 可调点云投影 → 3D 重建</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology Deep Dive -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-label animate">核心技术</div>
+      <h2 class="section-title animate">超表面光学设计、加工与算法</h2>
+
+      <!-- Phase Design -->
+      <div class="grid-2 animate" style="margin-bottom:32px;">
+        <div>
+          <h3 style="color:#fff;margin-bottom:12px;">超构单元仿真与相位设计</h3>
+          <p style="color:var(--text-secondary);margin-bottom:12px;">基于 COMSOL / CST 电磁仿真，建立纳米天线单元参数数据库，通过 2π 相位调控实现任意波前整形。</p>
+          <div class="img-card">
+            <img src="images/image21.png" alt="超表面单元相位调制设计" loading="lazy">
+            <div class="img-caption">图：超构表面单元相位调制设计</div>
+          </div>
+        </div>
+        <div>
+          <h3 style="color:#fff;margin-bottom:12px;">随机点阵生成与相位检索</h3>
+          <p style="color:var(--text-secondary);margin-bottom:12px;">泊松圆盘采样生成高对比度伪随机散斑点阵，加权 Gerchberg-Saxton 算法实现逆向相位设计。</p>
+          <div class="img-card">
+            <img src="images/image23.jpeg" alt="随机点阵图像" loading="lazy">
+            <div class="img-caption">图：高对比度随机点阵目标图与实验中拍摄的点阵图</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fabrication -->
+      <h3 style="color:#fff;margin-bottom:16px;">超表面微纳加工工艺</h3>
+      <div class="img-grid-2 animate" style="margin-bottom:32px;">
+        <div class="img-card">
+          <img src="images/image26.png" alt="超表面制备方法流程图" loading="lazy">
+          <div class="img-caption">图：超表面制备方法流程图 — 电子束光刻 + 多重硬掩模图案转移</div>
+        </div>
+        <div class="img-card">
+          <img src="images/image27.png" alt="超表面 SEM 图" loading="lazy">
+          <div class="img-caption">图：超表面的扫描电子显微镜（SEM）图 — 高纵横比纳米柱阵列</div>
+        </div>
+      </div>
+
+      <!-- 3D Reconstruction -->
+      <h3 style="color:#fff;margin-bottom:16px;">结构光三维重建与活体防伪</h3>
+      <div class="img-grid-3 animate" style="margin-bottom:32px;">
+        <div class="img-card">
+          <img src="images/image34.png" alt="结构光成像原理" loading="lazy">
+          <div class="img-caption">图：结构光成像原理 — 三角测量与三维重建</div>
+        </div>
+        <div class="img-card">
+          <img src="images/image35.png" alt="结构光成像结果" loading="lazy">
+          <div class="img-caption">图：超表面结构光三维成像结果</div>
+        </div>
+        <div class="img-card">
+          <img src="images/image36.png" alt="3D人脸识别" loading="lazy">
+          <div class="img-caption">图：三维人脸识别原理示意 — 高安全防伪体系</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Traditional vs MeFace -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-label animate">行业痛点</div>
+      <h2 class="section-title animate">传统方案的体积与成本困境</h2>
+      <div class="grid-2 animate" style="margin-bottom:32px;">
+        <div class="img-card">
+          <img src="images/image15.jpeg" alt="苹果前置摄像头复杂结构" loading="lazy">
+          <div class="img-caption">图：苹果 Face ID 前置摄像头的复杂结构 — 模组厚度达 5mm</div>
+        </div>
+        <div>
+          <h3 style="color:#fff;margin-bottom:12px;">传统 DOE 方案的核心问题</h3>
+          <p style="color:var(--text-secondary);margin-bottom:12px;">
+            依赖多片折射透镜组与 DOE 的精密组合，光学堆栈复杂。3D 模组挤占宝贵的屏幕区域，
+            2–5mm 的模组厚度成为手机轻薄化的核心阻碍。单个模组成本高达 100–200 元，
+            限制在中低端机型中的普及。
+          </p>
+          <p style="color:var(--text-secondary);">
+            超表面（metasurface）方案：用一张极薄的玻璃/硅片替代一串厚镜片。
+            表面数百万个纳米柱实现对光的精准调控，如同传统透镜棱镜一般。
+          </p>
+        </div>
+      </div>
+      <!-- Metasurface close-up -->
+      <div class="animate">
+        <div class="img-card">
+          <img src="images/image16.jpeg" alt="超透镜上的纳米柱结构" loading="lazy">
+          <div class="img-caption">图：超透镜上的纳米柱 — 厚度小于波长的人工层状材料，数百万个比头发丝细数百倍的纳米结构</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specs Comparison Table -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-label animate">技术指标</div>
+      <h2 class="section-title animate">MeFace vs iPhone Face ID</h2>
+      <p class="section-desc animate">在模组尺寸、点阵密度、制造成本等关键指标上实现系统性超越</p>
+      <div class="table-wrap animate">
+        <table>
+          <thead>
+            <tr>
+              <th>对比维度</th>
+              <th>iPhone Face ID (传统DOE方案)</th>
+              <th>MeFace (超表面方案)</th>
+              <th>提升</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>模组 Z 轴厚度</td><td>3.0 – 3.5 mm</td><td>&lt; 1.5 – 2.0 mm</td><td><span class="tag tag-green">厚度减半</span></td></tr>
+            <tr><td>光学组件数量</td><td>多片透镜 + DOE</td><td>单片/双层超透镜</td><td><span class="tag tag-green">减少 70%+</span></td></tr>
+            <tr><td>投射红外点阵</td><td>&gt; 30,000 点</td><td>≥ 45,000 点</td><td><span class="tag tag-green">密度 +50%</span></td></tr>
+            <tr><td>衍射效率</td><td>~60% – 70%</td><td>75% – 85%+</td><td><span class="tag tag-green">效率提升</span></td></tr>
+            <tr><td>深度分辨率</td><td>~50 μm</td><td>~30 μm</td><td><span class="tag tag-green">精度更高</span></td></tr>
+            <tr><td>组装对准要求</td><td>&lt; 1 μm 苛刻公差</td><td>晶圆级一次成型</td><td><span class="tag tag-green">良率显著改善</span></td></tr>
+            <tr><td>DOE 芯片成本</td><td>7 – 21 元</td><td>0.35 – 1.4 元</td><td><span class="tag tag-green">降低 95%</span></td></tr>
+            <tr><td>模组总 BOM 成本</td><td>42 – 108 元</td><td>28 – 63 元</td><td><span class="tag tag-green">降低 ~30%</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Cost comparison image -->
+      <div class="animate" style="margin-top:24px;">
+        <div class="img-card">
+          <img src="images/image30.png" alt="传统DOE与Meta-DOE芯片结构对比" loading="lazy">
+          <div class="img-caption">表：传统 DOE 光学堆栈与 Meta-DOE 芯片结构对比</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packaging -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-label animate">封装与集成</div>
+      <h2 class="section-title animate">晶圆级光学封装</h2>
+      <div class="grid-2 animate">
+        <div class="img-card">
+          <img src="images/image29.png" alt="Meta-DOE封装示意图" loading="lazy">
+          <div class="img-caption">图：基于 VCSEL 940nm 光源的晶圆级封装 — 亚微米主动对准</div>
+        </div>
+        <div>
+          <h3 style="color:#fff;margin-bottom:12px;">超薄紧凑投射模组</h3>
+          <p style="color:var(--text-secondary);margin-bottom:12px;">
+            选用 940nm VCSEL 作为泵浦光源，通过晶圆级光学封装（WLO）与亚微米级主动对准技术，
+            VCSEL 与超表面芯片高精度集成，形成超薄紧凑投射模组。
+          </p>
+          <p style="color:var(--text-secondary);">
+            配合窄带滤光片的全局快门红外相机，构建固定基线 3D 采集系统。
+            频闪硬件同步控制，极低功耗下实现高抗动态模糊的精准三维重构。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Four Advantages -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-label animate">核心优势</div>
+      <h2 class="section-title animate">四大产品优势</h2>
+      <div class="grid-2 animate">
+        <div class="card feature-card">
+          <div class="icon">📏</div>
+          <h3>极致微型化 · 颠覆性形态创新</h3>
+          <p>突破性毫米级减薄，Z 轴空间占用大幅削减。精度无损前提下为 AR 眼镜、智能穿戴、超薄笔记本等空间敏感终端赋予 OEM 更高工业设计自由度。</p>
+        </div>
+        <div class="card feature-card">
+          <div class="icon">🔋</div>
+          <h3>低功耗 · 极简集成</h3>
+          <p>系统级功耗优化，降低发光源超负荷驱动需求。标准硬件 + SDK + 深度 API 一体化交付，适配 Android / Linux / RTOS 多平台。</p>
+        </div>
+        <div class="card feature-card">
+          <div class="icon">🔒</div>
+          <h3>硬件级安全 · 多维防伪</h3>
+          <p>天然免疫 2D 伪造攻击，结合多帧深度一致性校验与材质反射约束，精准识别高仿真 3D 面具。复杂环境下维持稳定高信噪比识别。</p>
+        </div>
+        <div class="card feature-card">
+          <div class="icon">🤝</div>
+          <h3>B2B 交付友好 · 加速商业化</h3>
+          <p>配备专业 FAE 团队，从结构设计评测、光学调优、产线标定到系统联调全生命周期支持，帮助客户量产周期缩短 30%–50%。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology Barriers -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-label animate">技术壁垒</div>
+      <h2 class="section-title animate">全链路系统级护城河</h2>
+      <p class="section-desc animate">从光学设计到量产封装，软硬件深度耦合的五大核心壁垒</p>
+      <div class="process-steps animate">
+        <div class="process-step">
+          <div class="step-num">1</div><h4>超表面相位设计</h4>
+          <p>逆向光束整形、DFM 容差建模、高衍射效率点阵输出</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">2</div><h4>纳米加工工艺</h4>
+          <p>高纵横比刻蚀、宽窗口工艺控制、全流程在线 AOI 检测</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">3</div><h4>系统标定算法</h4>
+          <p>计算光学"软硬共设计"、高阶畸变补偿、秒级产线标定</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">4</div><h4>封装对准工艺</h4>
+          <p>亚微米级主动对准、全温区应力控制、模块化标准接口</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">5</div><h4>知识产权布局</h4>
+          <p>3 项核心专利申请中，覆盖光学结构、标定与封装</p>
+        </div>
+      </div>
+
+      <!-- Patent & Paper images -->
+      <div class="img-grid-2 animate" style="margin-top:32px;">
+        <div class="img-card">
+          <img src="images/image38.png" alt="已发表相关专利" loading="lazy">
+          <div class="img-caption">图：已发表相关专利（部分）</div>
+        </div>
+        <div class="img-card">
+          <img src="images/image39.png" alt="已发表相关论文" loading="lazy" style="display:none;">
+          <img src="images/image37.png" alt="知识产权布局" loading="lazy">
+          <div class="img-caption">图：已发表相关论文（部分）</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Roadmap -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-label animate">产品路线图</div>
+      <h2 class="section-title animate">稳健商业化 + 前沿技术储备</h2>
+      <div class="grid-3 animate">
+        <div class="card feature-card">
+          <div class="icon">🎯</div>
+          <h3>Phase 1 · 2026–2027</h3>
+          <p>超表面结构光模组送样流片 → 旗舰限定版试点导入。聚焦手机前摄 3D 人脸识别市场，完成 MVP 验证与首个量产试点。</p>
+          <span class="tag tag-green" style="margin-top:12px;">当前阶段</span>
+        </div>
+        <div class="card feature-card">
+          <div class="icon">🚀</div>
+          <h3>Phase 2 · 2028–2029</h3>
+          <p>主力旗舰全系导入扩容，VR/AR 近眼显示与感知组件出货。DUV 规模化降本驱动单品成本从 1.44 → 0.86 元。</p>
+        </div>
+        <div class="card feature-card">
+          <div class="icon">🌐</div>
+          <h3>Phase 3 · 2030+</h3>
+          <p>偏振屏下 Face ID（Polar ID）、多光谱识别、车载 LiDAR / DMS、工业医疗 3D 成像等泛 3D 视觉场景全面拓展。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3>MetaOptix Limited</h3>
+      <p>墨璞光学科技有限公司 · 香港城市大学 HK Tech 300 种子企业</p>
+    </div>
+    <div class="footer-links">
+      <div><h4>导航</h4>
+        <a href="index.html">首页</a><a href="product.html">产品与技术</a>
+        <a href="about.html">关于我们</a><a href="contact.html">联系与合作</a>
+      </div>
+      <div><h4>联系</h4>
+        <a href="mailto:info@metaoptix.com">info@metaoptix.com</a>
+        <a href="https://sites.google.com/gapps.cityu.edu.hk/metaoptix/home" target="_blank" rel="noopener">Google Sites</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2025–2026 MetaOptix Limited. All rights reserved.</span>
+    <span>香港 · 中国科学技术大学 · 香港城市大学</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
